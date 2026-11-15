@@ -138,15 +138,16 @@
 
 ## 03. AlienOcean: 만화풍 외계 바다
 
-![툰 바다](Screenshots/03_ocean_toon.png)
-
-밝은 청록 조각이 광원(Directional Light)을 향한 물결 면, 짙은 청록이 등진 면입니다. 경계가 부드러운 그라데이션 없이 딱 끊겨 만화처럼 보입니다.
-
-<!-- 툰 섞기 = 0 (갤러리 C1 그대로) 비교 샷을 찍으면 아래 표로 바꾸세요.
 | 툰 섞기 = 0 (갤러리 C1 그대로) | 툰 섞기 = 1 (완성) |
 | --- | --- |
 | ![매끈한 물](Screenshots/03_ocean_smooth.png) | ![툰 바다](Screenshots/03_ocean_toon.png) |
--->
+
+같은 카메라, 같은 머티리얼에서 `툰 섞기` 슬라이더만 바꿨습니다.
+
+- **왼쪽(0)**: 갤러리 C1 그대로입니다. 물결의 밝기가 그라데이션으로 부드럽게 이어집니다.
+- **오른쪽(1)**: 같은 밝기를 띠로 끊었습니다. 밝은 청록 조각이 광원(Directional Light)을 향한 물결 면, 짙은 청록이 등진 면이고, 경계가 딱 끊겨 만화처럼 보입니다.
+
+![툰 섞기 0 전체 장면](Screenshots/scene_smooth.webp)
 
 **한 줄 요약**: 사인파로 출렁이는 바다(C1)에 툰 단계화(A1)를 섞어, 빛을 향한 물결만 밝은 띠가 되는 만화풍 바다입니다.
 
@@ -293,6 +294,6 @@ UV 대신 **오브젝트 공간 위치**를 씁니다. 받아 온 메시의 UV �
 스크린샷 체크리스트 (Screenshots/ 폴더에 아래 이름으로 저장)
   (완료) scene_a.webp / scene_b.webp   완성 장면, 수정 감염 단계 비교
   (완료) 01_sky.png, 02_blackhole.png, 03_ocean_toon.png, 04_crystal_*.png   위 두 장면에서 잘라 확대함
-  03_ocean_smooth.png   바다, 툰 섞기 = 0 (03_ocean_toon 과 같은 시점) ← 아직 없음
+  (완료) 03_ocean_smooth.png, scene_smooth.webp   바다, 툰 섞기 = 0
 원리 설명을 더 보강하려면 단계 보기(LightBand, Infected 등) 화면도 찍어서 각 단계 옆에 넣으면 좋습니다.
 -->
